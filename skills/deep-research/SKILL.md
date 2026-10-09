@@ -26,7 +26,7 @@ Pick from this menu based on the question type. Note which sources you'll hit an
 |---|---|---|
 | Web search | Authoritative articles, docs, official statements | An advertised typed Magister search/research skill |
 | Recent social/web discussion | What people are saying right now | `magister-social-research` or another advertised typed action; otherwise explicit unavailable state |
-| Specific URLs / JS-heavy pages | User-supplied starting pages, pricing, product tours | `magister-firecrawl` or `magister-web-context` through its typed action; auth-walled pages require an advertised attended browser action |
+| Specific URLs / JS-heavy pages | User-supplied starting pages, pricing, product tours | `magister-firecrawl` through its typed action; auth-walled pages require an advertised attended browser action |
 | Memory | Prior research / decisions / context the user already captured | grep `~/.claude/memory/` |
 | Notion | If the topic touches a known Notion workspace | Load `magister-notion` and use its typed read action; the Gateway owns credentials |
 | Research archive | Prior `/deep-research` runs that touched this topic | grep `${MAKERSKILLS_CONFIG:-$HOME/.config/makerskills}/deep-research/archive/` |
