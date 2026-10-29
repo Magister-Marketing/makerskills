@@ -2,10 +2,13 @@
 name: paste
 description: "Clean terminal output (ANSI, box-drawing, prompts) and reformat for Slack, Notion, X, LinkedIn, email, or GitHub; clipboard in/out; secret scan."
 metadata:
-  version: 0.1.1
+  version: 0.1.2
 ---
 
 # /paste — Clean content for any destination
+
+In a Magister hosted workspace, follow the `magister-library` skill for file outputs. Keep explicit user repository/vault/app destinations; otherwise save deliverables under `resources/paste/`. Existing local archives and configured vault schemas remain authoritative when the user selected them.
+
 
 Cleans terminal output (ANSI, box-drawing, prompt artifacts, etc.) and reformats per destination rules. Reads clipboard by default, writes back to clipboard + previews in chat.
 
@@ -60,6 +63,8 @@ Strip from the content:
 Read `references/destinations.md` and apply the relevant transform.
 
 ## Step 6 — Output
+
+In a Magister hosted workspace, the HTML rows below use `resources/paste/paste-<timestamp>.html` and return a file link. Clipboard and desktop `open` behavior applies only where those capabilities are available.
 
 | Destination | Output behavior |
 |---|---|

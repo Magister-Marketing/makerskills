@@ -2,10 +2,12 @@
 name: company-brain
 description: "Maintain the team's shared AI-ready knowledge base (/cb): capture, compile wiki, query, review, lint — people, companies, meetings, SOPs, decisions."
 metadata:
-  version: 0.2.1
+  version: 0.2.2
 ---
 
 # /company-brain — Team-shared AI-ready knowledge base
+
+In a Magister hosted workspace, follow the `magister-library` skill for file outputs. Keep explicit user repository/vault/app destinations; otherwise save deliverables under `resources/company-brain/`. Existing local archives and configured vault schemas remain authoritative when the user selected them.
 
 **Company Brain** *(n.)*: Your team's shared, AI-ready knowledge base — people, companies, meetings, SOPs, and decisions structured so Claude can answer questions on your team's behalf.
 

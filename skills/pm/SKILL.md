@@ -2,10 +2,13 @@
 name: pm
 description: "Manage per-business kanban boards with Eisenhower triage: setup, triage, next, status, unblock, weekly; Notion/GitHub/Linear/Obsidian/manual adapters."
 metadata:
-  version: 0.1.2
+  version: 0.1.3
 ---
 
 # /pm — Project management across the portfolio
+
+In a Magister hosted workspace, follow the `magister-library` skill for file outputs. Keep explicit user repository/vault/app destinations; otherwise save deliverables under `resources/pm/`. Existing local archives and configured vault schemas remain authoritative when the user selected them.
+
 
 Methodology-first project management. Kanban + Eisenhower + async. One board per business. Tool-agnostic via adapters.
 

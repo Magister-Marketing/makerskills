@@ -2,10 +2,12 @@
 name: deep-research
 description: "Investigate a topic with multi-pass research (web, Firecrawl, /last30days, memory, Notion) into a cited brief; market validation, due diligence."
 metadata:
-  version: 0.2.1
+  version: 0.2.2
 ---
 
 # /deep-research — Multi-source research with archive
+
+In a Magister hosted workspace, follow the `magister-library` skill for file outputs. Keep explicit user repository/vault/app destinations; otherwise save deliverables under `resources/deep-research/`. Existing local archives and configured vault schemas remain authoritative when the user selected them.
 
 Plans, executes, and synthesizes research from multiple sources. Archives the output so the corpus compounds.
 
@@ -90,7 +92,7 @@ Use this template:
 
 ## Step 6 — Archive
 
-Archives live in `${MAKERSKILLS_CONFIG:-$HOME/.config/makerskills}/deep-research/archive/` (create the directory if missing). Never write archives inside the skill's own folder — skill installs and upgrades re-sync from source and wipe anything saved there. **Migration:** if this skill's folder contains an old `references/research-archive/` with user entries, move those files into the archive directory first.
+In Magister, archive unspecified research output under `resources/deep-research/archive/`. Preserve a user-selected archive; elsewhere archives live in `${MAKERSKILLS_CONFIG:-$HOME/.config/makerskills}/deep-research/archive/` (create the directory if missing). Never write archives inside the skill's own folder — skill installs and upgrades re-sync from source and wipe anything saved there. **Migration:** if this skill's folder contains an old `references/research-archive/` with user entries, move those files into the archive directory first.
 
 Write the brief to `<archive dir>/<YYYY-MM-DD>-<slug>.md` so it's grep-able forever. Slug = kebab-case of the topic.
 

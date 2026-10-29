@@ -6,6 +6,13 @@ All notable changes to `makerskills` are documented here. Format loosely follows
 
 ---
 
+## [v1.4.2] — 2026-10-27
+
+### Fixed
+- **Magister Library outputs** — use the shared capability-based file receipt contract for hosted deliverables and archives while preserving explicit user repositories, vaults, and app destinations. Cover research, slides, knowledge workflows, project planning, and formatted exports.
+
+---
+
 ## [v1.4.1] — 2026-07-30
 
 ### Fixed
