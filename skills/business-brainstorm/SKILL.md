@@ -87,7 +87,7 @@ Use this template:
 - (other candidates if relevant)
 
 ## Research applied
-- <link to deep-research brief in ~/.config/makerskills/deep-research/archive/, if run>
+- <link to the deep-research brief at the path deep-research returned (in Magister `resources/deep-research/archive/`, unless the user chose another place), if run>
 
 ## Open questions
 - <what would change the verdict>
