@@ -2,10 +2,13 @@
 name: slide-deck
 description: "Draft, update, PPTX-convert, or export branded React/Next.js slide decks: Slide[] primitives, three narrative angles, speaker notes, density modes."
 metadata:
-  version: 0.2.2
+  version: 0.2.3
 ---
 
 # /slide-deck — Draft, update, convert, and export branded React decks
+
+In a Magister hosted workspace, follow the `magister-library` skill for file outputs. Keep explicit user repository/vault/app destinations; otherwise save deliverables under `resources/slide-deck/`. Existing local archives and configured vault schemas remain authoritative when the user selected them.
+
 From the old description, not in the body: the slide system's primitive set also includes Divider and GradientText, and decks cycle through 12 brand gradients (see references/system.md); fold into the body's system overview so the detail isn't lost.
 
 
@@ -142,7 +145,7 @@ Don't auto-start the dev server (might disrupt other work).
 
 ## Step 8 — Archive
 
-The archive lives in `${MAKERSKILLS_CONFIG:-$HOME/.config/makerskills}/slide-deck/archive/` (create the directory if missing). Never write the archive inside the skill's own folder — skill installs and upgrades re-sync from source and wipe anything saved there. **Migration:** if this skill's folder contains an old `references/decks-archive.md` with user entries, move it to `<archive dir>/INDEX.md` first.
+In Magister, unspecified archive output belongs under `resources/slide-deck/archive/`; preserve the user's configured slide repository and archive. Elsewhere the archive lives in `${MAKERSKILLS_CONFIG:-$HOME/.config/makerskills}/slide-deck/archive/` (create the directory if missing). Never write the archive inside the skill's own folder — skill installs and upgrades re-sync from source and wipe anything saved there. **Migration:** if this skill's folder contains an old `references/decks-archive.md` with user entries, move it to `<archive dir>/INDEX.md` first.
 
 Append a one-liner to `<archive dir>/INDEX.md` (create if missing):
 

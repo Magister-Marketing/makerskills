@@ -2,10 +2,12 @@
 name: second-brain
 description: "Capture, compile, query, lint, and connect your personal markdown Second Brain vault (/sb) — Karpathy LLM Wiki: raw/ to wiki/ to outputs/."
 metadata:
-  version: 0.1.1
+  version: 0.1.2
 ---
 
 # /second-brain — Karpathy LLM Wiki workflow
+
+In a Magister hosted workspace, follow the `magister-library` skill for file outputs. Keep explicit user repository/vault/app destinations; otherwise save deliverables under `resources/second-brain/`. Existing local archives and configured vault schemas remain authoritative when the user selected them.
 
 Wraps an existing Second Brain in Obsidian (or any markdown-based vault). The wiki vault's CLAUDE.md is the authoritative schema — the skill orchestrates the operations the user has been doing manually.
 
